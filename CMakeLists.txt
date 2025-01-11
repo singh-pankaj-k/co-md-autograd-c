@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.26)
-project(NeuralNet C)
+project(CoMdAutograd LANGUAGES C CXX)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(NeuralNet main.c
+add_executable(app main.c
         src/read_csv.c)
