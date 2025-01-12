@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <limits.h>
-#include<stdbool.h>
+#include <stdbool.h>
 #include <stdlib.h>
 
 #define MAXCHAR 1000
