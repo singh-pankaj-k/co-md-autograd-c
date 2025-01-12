@@ -7,6 +7,7 @@
 #include <limits.h>
 #include <stdbool.h>
 #include <stdlib.h>
+#include "read_csv.h"
 
 #define MAXCHAR 1000
 
