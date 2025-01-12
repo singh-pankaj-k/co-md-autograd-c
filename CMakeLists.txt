@@ -3,8 +3,13 @@ project(CoMdAutograd LANGUAGES C CXX)
 
 set(CMAKE_C_STANDARD 11)
 
+file(GLOB SRC_FILES "*.c" "src/*.c")
+
 add_executable(
         app
-        main.c
-        src/read_csv.c
+        ${SRC_FILES}
 )
+
+
+#MESSAGE("HI I AM PRINTING")
+#message(${SRC_FILES})
