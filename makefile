@@ -12,7 +12,7 @@ create_outputDir:
 read_csv.o: src/read_csv.h
 	gcc -c $(inputDir)/read_csv.c -o $(outputDir)/read_csv.o
 
-main.o: main.c
+main.o: src/main.c
 	gcc -c main.c -o $(outputDir)/main.o
 
 .PHONY : clean_build

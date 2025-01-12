@@ -3,7 +3,7 @@ project(CoMdAutograd LANGUAGES C CXX)
 
 set(CMAKE_C_STANDARD 11)
 
-file(GLOB SRC_FILES "*.c" "src/*.c" "src/*.h")
+file(GLOB SRC_FILES "src/*.c" "src/*.h")
 
 add_executable(
         app

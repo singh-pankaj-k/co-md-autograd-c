@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
-#include "src/read_csv.h"
+#include "read_csv.h"
 
 
 int main() {
