@@ -4,7 +4,7 @@
 
 // test/test_add.c
 #include <assert.h>
-#include "../src/add.h"
+#include "../src/tensor.h"
 
 int main() {
     // Test the add function
