@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <gsl/gsl_sf_bessel.h>
 #include "read_csv.h"
 
 
@@ -27,6 +28,10 @@ int main() {
            AddNumbers(4, 6, 7, 8, 9));
 
     readCsv();
+
+    double x = 5.0;
+    double y = gsl_sf_bessel_J0 (x);
+    printf ("J0(%g) = %.18e\n", x, y);
 
     return 0;
 }

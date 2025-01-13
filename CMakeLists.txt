@@ -2,12 +2,19 @@ cmake_minimum_required(VERSION 3.26)
 project(CoMdAutograd LANGUAGES C CXX)
 set(CMAKE_C_STANDARD 11)
 
+# Find the GSL package
+find_package(GSL REQUIRED)
+
 file(GLOB SRC_FILES "src/*.c" "src/*.h")
 
 add_executable(
         app
         ${SRC_FILES}
 )
+
+# Include GSL headers and link the library
+target_include_directories(app PRIVATE ${GSL_INCLUDE_DIRS})
+target_link_libraries(app PRIVATE ${GSL_LIBRARIES})
 
 # Enable testing
 enable_testing()
