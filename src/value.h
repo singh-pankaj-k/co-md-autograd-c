@@ -1,6 +1,7 @@
 //
 // Created by Pankaj Priscilla on 2025-01-13.
 //
+#include <stdio.h>
 
 #ifndef VALUE_H
 #define VALUE_H
@@ -27,5 +28,17 @@ struct Value {
 * Instead of struct Value value_1 = {...} we can now do Value value_1 = {...}
 */
 typedef struct Value Value;
+
+
+/**
+ * @brief Prints the attributes of a Value object.
+ *
+ * @example
+ * Value* v = make_value(3.0);
+ * print_value(v);  // Outputs: Value(val=5.00, grad=0.00)
+ */
+void print_value(Value* v) {
+    printf("Value(val=%.2f, grad=%.2f)\n", v->val, v->grad);
+}
 
 #endif //VALUE_H
