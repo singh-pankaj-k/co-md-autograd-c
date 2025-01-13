@@ -32,6 +32,9 @@ int test_make_value() {
   assert(v->n_children == 0);
   assert(v->backward == NULL);
 
+  // Free the memory
+  free(v);
+
   return 0;
 }
 

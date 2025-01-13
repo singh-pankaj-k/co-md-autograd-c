@@ -50,6 +50,8 @@ void print_value(Value* v) {
  * @example
  * Value* v = make_value(5.0);
  * print_value(v);  // Outputs: Value(val=5.00, grad=0.00)
+ *
+ * The allocated memory should be freed in the end.
  */
 Value* make_value(float x) {
     Value* v = (Value*)malloc(sizeof(Value));
