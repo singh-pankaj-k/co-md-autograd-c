@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.26)
 project(CoMdAutograd LANGUAGES C CXX)
-set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD 17)
 
 # Find the GSL package
 find_package(GSL REQUIRED)
