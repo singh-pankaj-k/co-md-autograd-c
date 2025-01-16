@@ -33,4 +33,10 @@ Tensor* create_tensor(int* shape, int ndim, int requires_grad);
 // Free tensor memory
 void free_tensor(Tensor* tensor);
 
+// Add two tensors
+Tensor* add(Tensor* a, Tensor* b);
+
+// Backwards
+void backward(Tensor* tensor);
+
 #endif //TENSOR_H
